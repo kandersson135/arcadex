@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+  background-color: #97d2d4;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%2381c8ca' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+#game-container {
+  background-color: #dddddd;
+  border: 1px solid #d1d1d1;
+  box-shadow: inset 4px 4px 4px 0 #e5e5e5, 2px 2px 0 0 #d1d1d1, 5px 5px 0 0 #d1d1d1, 8px 8px 0 0 #d1d1d1, 10px 10px 0 0 #d1d1d1;
+  border-radius: 10px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-top: 5px;
+  width: 900px;
+}
+
+#game-title {
+  background-color: #999;
+  color: transparent;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+}
+
+#game-screen {
+  background-color: #9bbc0f;
+  background-image: url(../img/bg.png);
+  border: 1px solid #8bac0f;
+  box-shadow: inset 5px 5px 5px 0 #8bac0f, inset 100px 100px 100px 100px rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  height: 540px;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 860px;
+}
+
+#game-screen p {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  line-height: 14px;
+  padding: 0 10px;
+}
+
+#start-btn {
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 550px;
+  width: 100px;
+  user-select: none;
+}
+
+#start-btn:active {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2px;
+  position: relative;
+  top: 65px;
+}
+
+/* Slider */
+#slider {
+  margin-top: 100px;
+}
+
+#slider p {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 20px 0 40px 0;
+  text-align: center;
+}
+
+#slider img {height: 92px; opacity: 0.3;}
+
+.slick-center img {
+  height: 192px !important; opacity: 0.7 !important;
+  transition-duration: 0.3s;
+}
+
+.swal2-modal {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  margin-top: -250px !important;
+  width: 250px;
+}
+
+.swal2-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+.swal2-html-container {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px !important;
+}
+
+.swal2-confirm {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-weight: 700;
+  left: 90px !important;
+  position: relative;
+  top: 15px;
+}
+
+/* CUSTOM CLASSES
+----------------------------------------------- */
+.right {float:right;}
+.left {float:left;}
+.bold {font-weight:bold;}
+.italic {font-style:italic;}
+.underline {border-bottom:1px solid #d8d8d8; padding-bottom:5px;}
+.center {text-align:center;}
+img.center {display:block; margin-left:auto; margin-right:auto;}
+
+/* SPACER */
+div.spacer {clear:both; display:block; height:10px;}
+
+/* COLUMNS */
+.one-half {width:48%;}
+.one-third {width:30.66%;}
+.two-third {width:65.33%;}
+.one-fourth {width:22%;}
+.three-fourth {width:74%;}
+.one-fifth {width:16.8%;}
+.two-fifth {width:37.6%;}
+.three-fifth {width:58.4%;}
+.four-fifth {width:67.2%;}
+.one-sixth {width:13.33%;}
+.five-sixth {width:82.67%;}
+.one-half, .one-third, .two-third, .three-fourth, .one-fourth, .one-fifth, .two-fifth, .three-fifth, .four-fifth, .one-sixth, .five-sixth {position:relative; margin-right:4%; float:left;}
+.last {margin-right:0 !important; clear:right;}

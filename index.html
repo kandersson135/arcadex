@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="#97d2d4">
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  	<meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="apple-touch-icon" href="img/webapp-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <title>ArcadeX</title>
+
+		<!-- CSS -->
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <style type="text/css" rel="stylesheet">
+      #slider {visibility:hidden;}
+		</style>
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="game-title">ArcadeX</div>
+      <div id="game-screen">
+        <p> Hello, what game would you like to play today?</p>
+
+        <div id="slider">
+          <div id="g1">
+            <img src="img/icons/snake.png" alt="Snake" class="center">
+            <p>Snake</p>
+          </div>
+
+          <div id="g2">
+            <img src="img/icons/space.png" alt="Space Invaders" class="center">
+            <p>Space Invaders</p>
+          </div>
+
+          <div id="g3">
+            <img src="img/icons/pong.png" alt="Pong" class="center">
+            <p>Pong</p>
+          </div>
+
+          <div id="g4">
+            <img src="img/icons/mole.png" alt="Whack-a-Mole" class="center">
+            <p>Whack-a-Mole</p>
+          </div>
+
+          <div id="g5">
+            <img src="img/icons/tic.png" alt="Tic-Tac-Toe" class="center">
+            <p>Tic-Tac-Toe</p>
+          </div>
+
+          <div id="g6">
+            <img src="img/icons/brick.png" alt="Brick Breaker" class="center">
+            <p>Brick Breaker</p>
+          </div>
+
+          <div id="g7">
+            <img src="img/icons/pixel.png" alt="Pixel Battle" class="center">
+            <p>Pixel Battle</p>
+          </div>
+
+          <div id="g8">
+            <img src="img/icons/hand.png" alt="Tag" class="center">
+            <p>Tag</p>
+          </div>
+        </div><!-- end slider -->
+
+        <div id="start-btn">Start game</div>
+      </div><!-- end game screen -->
+    </div><!-- end game container -->
+
+    <!-- js -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/main.js"></script>
+  </body>
+</html>
