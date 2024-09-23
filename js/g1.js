@@ -96,18 +96,33 @@ $(document).ready(function() {
     return hitBody || hitWall;
   }
 
+  // function generateFood() {
+  //   var food = {
+  //     x: Math.floor(Math.random() * gridWidth),
+  //     y: Math.floor(Math.random() * gridHeight),
+  //   };
+  //
+  //   if (snake.some((part) => part.x === food.x && part.y === food.y)) {
+  //     return generateFood();
+  //   }
+  //
+  //   return food;
+  // }
+
   function generateFood() {
     var food = {
-      x: Math.floor(Math.random() * gridWidth),
-      y: Math.floor(Math.random() * gridHeight),
+      x: Math.floor(Math.random() * (gridWidth - 2)) + 1, // Ensures x is between 1 and gridWidth - 2
+      y: Math.floor(Math.random() * (gridHeight - 2)) + 1, // Ensures y is between 1 and gridHeight - 2
     };
 
+    // Ensure food doesn't spawn on the snake
     if (snake.some((part) => part.x === food.x && part.y === food.y)) {
-      return generateFood();
+      return generateFood(); // Recurse if food is on the snake
     }
 
     return food;
   }
+
 
   function resetGame() {
     snake = [{ x: 4, y: 4 }];
