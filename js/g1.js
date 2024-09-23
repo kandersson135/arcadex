@@ -69,23 +69,43 @@ $(document).ready(function() {
     draw();
   }
 
+  // function changeDirection(event) {
+  //   if (isMoving) return;
+  //
+  //   if (event.key === 'ArrowRight' && direction !== 'left') {
+  //     direction = 'right';
+  //     isMoving = true;
+  //   } else if (event.key === 'ArrowLeft' && direction !== 'right') {
+  //     direction = 'left';
+  //     isMoving = true;
+  //   } else if (event.key === 'ArrowUp' && direction !== 'down') {
+  //     direction = 'up';
+  //     isMoving = true;
+  //   } else if (event.key === 'ArrowDown' && direction !== 'up') {
+  //     direction = 'down';
+  //     isMoving = true;
+  //   }
+  // }
+
   function changeDirection(event) {
     if (isMoving) return;
 
-    if (event.key === 'ArrowRight' && direction !== 'left') {
+    // Check for arrow keys and WASD keys
+    if ((event.key === 'ArrowRight' || event.key === 'd') && direction !== 'left') {
       direction = 'right';
       isMoving = true;
-    } else if (event.key === 'ArrowLeft' && direction !== 'right') {
+    } else if ((event.key === 'ArrowLeft' || event.key === 'a') && direction !== 'right') {
       direction = 'left';
       isMoving = true;
-    } else if (event.key === 'ArrowUp' && direction !== 'down') {
+    } else if ((event.key === 'ArrowUp' || event.key === 'w') && direction !== 'down') {
       direction = 'up';
       isMoving = true;
-    } else if (event.key === 'ArrowDown' && direction !== 'up') {
+    } else if ((event.key === 'ArrowDown' || event.key === 's') && direction !== 'up') {
       direction = 'down';
       isMoving = true;
     }
   }
+
 
   function isCollision() {
     var head = snake[0];
